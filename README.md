@@ -36,10 +36,13 @@ Valores que tambem serão atribuidos a banco não-relacional para sua persistenc
         
         return result_id
 
-E uma ultima função criada para que ambas funções de calculo e de salvamento em banco de dados possam ser executadas.
+E uma ultima função criada para que ambas funções de calculo e de salvamento em banco de dados possam ser executadas.<br><br>
 
  def calculation_sum_max_and_save(triangle, db):
+ 
         result_calculation = calculation_sum_max(triangle)
+        
         result_id = save_result_mongodb(triangle, result_calculation, db)
+        
         return ResultTriangle(triangle, result_calculation, result_id)
     
