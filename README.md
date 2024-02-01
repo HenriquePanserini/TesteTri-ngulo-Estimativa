@@ -24,3 +24,20 @@ Valores que tambem serão atribuidos a banco não-relacional para sua persistenc
             result_calculation[i][j] += max(result_calculation[i + 1][j], result_calculation[i + 1][j + 1])
     
     return result_calculation[0][0]
+
+Alem disso nessa service tambem foi adicionado uma função para realizar o salvamento dos dados obetidos no banco de dados MongoDB
+
+  def save_result_mongodb(triangle, result_calculation, db):
+        result_id = db.results.insert_one({
+            'triangle' : triangle,
+            'result: ' : result_calculation
+        }).inserted_id
+        return result_id
+
+E uma ultima função criada para que ambas funções de calculo e de salvamento em banco de dados possam ser executadas
+
+ def calculation_sum_max_and_save(triangle, db):
+        result_calculation = calculation_sum_max(triangle)
+        result_id = save_result_mongodb(triangle, result_calculation, db)
+        return ResultTriangle(triangle, result_calculation, result_id)
+    
