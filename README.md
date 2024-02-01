@@ -9,4 +9,4 @@ Adição de diretorio mode: <br><br>
         self.triangle = triangle
         self.result = result
     
-Valores que tambem serão atribuidos a banco não=relacional para sua persistencia
+Valores que tambem serão atribuidos a banco não-relacional para sua persistencia
