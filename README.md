@@ -9,7 +9,7 @@
         self.triangle = triangle
         self.result = result
     
-Valores que tambem serão atribuidos a banco não-relacional para sua persistencia
+Valores que tambem serão atribuidos a banco não-relacional para sua persistencia.
 
 3.Adição de metodo service: <br><br>
     Adição de metodo de service_calculation para execução do calculo do triangulo de estimativa.
@@ -25,7 +25,7 @@ Valores que tambem serão atribuidos a banco não-relacional para sua persistenc
     
     return result_calculation[0][0]
 
-Alem disso nessa service tambem foi adicionado uma função para realizar o salvamento dos dados obetidos no banco de dados MongoDB
+Alem disso nessa service tambem foi adicionado uma função para realizar o salvamento dos dados obetidos no banco de dados MongoDB.
 
   def save_result_mongodb(triangle, result_calculation, db):
         result_id = db.results.insert_one({
@@ -34,7 +34,7 @@ Alem disso nessa service tambem foi adicionado uma função para realizar o salv
         }).inserted_id
         return result_id
 
-E uma ultima função criada para que ambas funções de calculo e de salvamento em banco de dados possam ser executadas
+E uma ultima função criada para que ambas funções de calculo e de salvamento em banco de dados possam ser executadas.
 
  def calculation_sum_max_and_save(triangle, db):
         result_calculation = calculation_sum_max(triangle)
