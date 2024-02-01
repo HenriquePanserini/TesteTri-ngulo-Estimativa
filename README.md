@@ -25,9 +25,10 @@ Valores que tambem serão atribuidos a banco não-relacional para sua persistenc
     
     return result_calculation[0][0]
 
-  Alem disso nessa service tambem foi adicionado uma função para realizar o salvamento dos dados obetidos no banco de dados MongoDB.
+  Alem disso nessa service tambem foi adicionado uma função para realizar o salvamento dos dados obetidos no banco de dados MongoDB.<br><br>
 
   def save_result_mongodb(triangle, result_calculation, db):
+  
         result_id = db.results.insert_one({
             'triangle' : triangle,
             'result: ' : result_calculation
