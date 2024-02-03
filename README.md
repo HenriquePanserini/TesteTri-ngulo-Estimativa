@@ -75,3 +75,11 @@ E uma ultima função criada para que ambas funções de calculo e de salvamento
     if __name__ == '__main__':
         app.run(debug=True)
     
+4.Evidencia de teste de execução do metodo POST: <br><br>
+    Evidencias da execução de funcionalidade do calculo de estimativa do triangulo realizado a partir da ferramenta POSTMAN
+
+    <img src="./img_evidencia/Evidencia de teste de metodo no postman.png" alt='evidencia_POST'/>
+
+    Evidencia de pesistencia de dados no Banco nao-relacional MongoDB
+
+    <img src="./img_evidencia/Evidencia de persistencia no mongoDB.png" alt='evidencia_POST'/>
