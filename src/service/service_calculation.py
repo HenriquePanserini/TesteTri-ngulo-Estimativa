@@ -17,9 +17,9 @@ def save_result_mongodb(triangle, result_calculation, db):
         return result_id
     
 def calculation_sum_max_and_save(triangle, db):
-        result_calculation = calculation_sum_max(triangle)
-        result_id = save_result_mongodb(triangle, result_calculation, db)
-        return ResultTriangle(triangle, result_calculation, result_id)
-    
+    result_calculation = calculation_sum_max(triangle)
+    result_id = save_result_mongodb(triangle, result_calculation, db)
+    return ResultTriangle(triangle, result_calculation, result_id)
+
 
         
