@@ -1,0 +1,5 @@
+.vscode/
+src/model/__init__.py
+src/model/__pycache__/
+src/service/__init__.py
+src/service/__pycache__/
